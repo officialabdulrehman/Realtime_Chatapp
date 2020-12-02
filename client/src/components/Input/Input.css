@@ -1,17 +1,28 @@
 .form {
   display: flex;
-  border-top: 2px solid #D3D3D3;
+  /* border-top: 2px solid #039af4; */
 }
 
 .input {
-  border: none;
-  border-radius: 0;
+  /* border: none; */
   padding: 5%;
   width: 80%;
+
   font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 20px;
+  background-color: #232323;
+  height: 60px;
+  margin: 10px;
+  border-radius: .3rem;
+  outline: none;
+  color: #ddd;
+  letter-spacing: 0.1rem;
+  border: 1px solid #232323;
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus, input:hover, textarea:focus, textarea:hover, select:focus{
+  border: 1px solid #03a9f4;
   outline: none;
 }
 
@@ -19,9 +30,17 @@ input:focus, textarea:focus, select:focus{
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #2979FF;
-  padding: 20px;
+  background: #039af4;
+  border-radius: 0.3rem;
+  padding: 0px;
+  margin-top: 10px;
+  height: 60px;
   display: inline-block;
   border: none;
+  outline: none;
   width: 20%;
+}
+.sendButton:hover, .sendButton:focus {
+  background-color: #03a9f4;
+  cursor: pointer;
 }
